@@ -1,0 +1,47 @@
+[base]
+port = "8080"
+model = "debug"
+serverName = "STEWARD"
+banner = ""
+
+[log]
+level = "info"
+filePath = "log/cloudManager.log"
+
+[mysql]
+username = "root"
+password = "admin123"
+host = "127.0.0.1"
+port = "3306"
+db = ""
+charset = "utf8mb4"
+parseTime = "True"
+loc = "Local"
+maxIdleConns = 25
+maxOpenConns = 100
+connMaxLifetime = 30
+
+[postgre]
+username = "root"
+password = "admin123"
+host = "127.0.0.1"
+port = "3306"
+charset = "utf8mb4"
+parseTime = "True"
+loc = "Local"
+maxIdleConns = 25
+maxOpenConns = 100
+connMaxLifetime = 30
+
+[redis]
+host = "127.0.0.1"
+password = ""
+db = 1
+prefix = "steward"
+
+[email]
+user = "cloudpub@cloudnineinfo.com"
+password = "WrQrHWNc2RwtmyUd"
+address = "smtp.cloudnineinfo.com:25"
+host = "smtp.cloudnineinfo.com"
+authentication = "login"
