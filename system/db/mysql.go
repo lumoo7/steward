@@ -1,4 +1,4 @@
-package module
+package db
 
 import (
 	"fmt"
@@ -37,7 +37,7 @@ func initMySQL() {
 		c.Mysql.Loc)
 	d, err := gorm.Open(mysql.New(mysql.Config{
 		DSN:                       dsn,
-		DefaultStringSize:         c.Mysql.DefaultStringSize,
+		DefaultStringSize:         uint(c.Mysql.DefaultStringSize),
 		DisableDatetimePrecision:  c.Mysql.DisableDatetimePrecision,
 		DontSupportRenameIndex:    c.Mysql.DontSupportRenameIndex,
 		DontSupportRenameColumn:   c.Mysql.DontSupportRenameColumn,
